@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="editstyle.css"> <!-- Unified with Profile page -->
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="left-section">
+                <div class="avatar">
+                    <img class="rounded-circle" src="фотопрофиля.png" alt="Profile Avatar">
+                </div>
+                <h2>Иванов Иван</h2>
+                <p>Контент Мейкер</p>
+            </div>
+            <div class="right-section">
+                <h3>Редактирование профиля</h3>
+                <div class="form-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="first-name">Имя</label>
+                            <input type="text" id="first-name" class="form-control" value="Иван">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name">Фамилия</label>
+                            <input type="text" id="last-name" class="form-control" value="Иванов">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" value="ivanov@mail.ru">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Телефон</label>
+                            <input type="text" id="phone" class="form-control" value="+79600000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="address">Адрес</label>
+                            <input type="text" id="address" class="form-control" value="Россия, Москва">
+                        </div>
+                    </div>
+                    <div class="mt-5 text-right">
+                        <button class="btn profile-button">Сохранить профиль</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

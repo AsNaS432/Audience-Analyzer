@@ -1,0 +1,103 @@
+/* General Styles for Edit Page */
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* Gradient background */
+    color: #fff;
+}
+
+/* Container for Edit Profile */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Profile Card Layout */
+.profile-card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Left Section: Avatar and Info */
+.left-section {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+h2, p {
+    color: #fff;
+}
+
+/* Right Section: Form for Editing */
+.right-section {
+    flex: 2;
+    padding: 20px 40px;
+}
+
+/* Styling for Form Inputs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #573b8a;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #6d44b8; /* Highlight input on focus */
+}
+
+/* Buttons */
+.profile-button {
+    background-color: #573b8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile-button:hover {
+    background-color: #6d44b8;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .right-section {
+        padding: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
